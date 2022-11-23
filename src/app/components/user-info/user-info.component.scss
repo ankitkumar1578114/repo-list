@@ -1,0 +1,28 @@
+.user-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    margin:auto;
+    height:200px;
+    .left{
+        width:200px;
+        border-radius: 50%;        
+    }
+    .right{
+        width:calc(100% - 200px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:6px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        .user-name{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .user-bio{
+            font-size:18px;
+        }
+
+    }
+}

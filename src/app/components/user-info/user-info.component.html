@@ -1,0 +1,27 @@
+<div class="user-info">
+    <div class="left">
+        <img style="border-radius:50%;width:8rem;height:8rem;" [src]="userData?.avatar_url">        
+    </div>
+    <div class="right">
+        <div class="user-name">
+            {{userData?.name}}
+        </div>
+        <div class="user-bio" *ngIf="userData?.bio">
+            {{userData?.bio}}
+        </div>
+        <div class="user-bio" *ngIf="!userData?.bio">
+            No Bio
+        </div>
+
+        <div>
+            {{userData?.location}}
+        </div>
+        <div *ngIf="userData?.twitter_user_name">
+            Twitter : {{userData?.twitter_username}}
+        </div>
+        <div *ngIf="!userData?.twitter_user_name">
+            No Twitter URL
+        </div>
+
+    </div>
+</div>

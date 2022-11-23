@@ -1,0 +1,24 @@
+<div class="repo-list">
+    <div *ngFor="let repo of repoList">
+        <div>
+            <app-repo-comp [repo]="repo"></app-repo-comp>
+        </div>
+    </div>
+</div>
+<div class="pagination">
+    <div class="page-number" (click)="decPage()">
+        <<
+    </div>
+    <div *ngFor="let item of [1,2,3,4,5]" [ngStyle]="{'background-color':(currentPage==item?'blue':'white')}"
+    (click)="this.currentPage=item;callIt()"
+    >
+        <div>
+            {{item}}
+        </div>
+    </div>    
+    <div class="page-number" (click)="incPage()">
+        >>
+    </div>
+
+</div>
+

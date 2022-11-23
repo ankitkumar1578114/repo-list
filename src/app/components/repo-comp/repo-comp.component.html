@@ -1,0 +1,17 @@
+<div class="repo-comp">
+    <div class="repo-name">
+        <a [href]="repo.html_url">{{repo.name}}</a>
+    </div>
+    <div class="repo-desc" *ngIf="repo.description">
+        {{repo.description}}
+    </div>
+    <div class="repo-desc" *ngIf="!repo.description">
+        No description
+    </div>
+
+    <div class="repo-topics">
+        <div *ngFor="let item of repo.topics">
+            {{item}}
+        </div>
+    </div>
+</div>

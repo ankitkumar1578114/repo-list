@@ -1,0 +1,37 @@
+.repo-comp{
+    display:flex;
+    flex-direction: column;
+    gap:6px;
+    // border:1px solid rgba(0, 0, 0, 0.732);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.105);
+    border-radius: 4px;
+    width:400px;
+    padding:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .repo-name{
+        color:rgb(0, 64, 255);
+        font-size:20px;
+        font-weight: 500;
+        a{
+            color:rgb(0, 64, 255);
+            text-decoration: none;
+        }
+    }
+    .repo-desc{
+        max-height: 20px;
+        overflow: hidden;
+        color:rgb(65, 65, 65);
+    }
+    .repo-topics{
+        display:flex;   
+        gap:10px;
+    }
+    .repo-topics >*{
+        border:1px solid rgba(0, 0, 0, 0.734);        
+        padding:4px 10px;
+        border-radius: 4px;
+        background-color: rgba(0, 0, 255, 0.642);
+        color:white;
+    }
+
+}
