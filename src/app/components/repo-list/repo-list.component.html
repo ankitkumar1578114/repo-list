@@ -1,4 +1,9 @@
 <div class="repo-list">
+    <div class="loader" *ngIf="repoList.length==0">
+
+    </div>    
+</div>
+<div class="repo-list">    
     <div *ngFor="let repo of repoList">
         <div>
             <app-repo-comp [repo]="repo"></app-repo-comp>
@@ -9,7 +14,7 @@
     <div class="page-number" (click)="decPage()">
         <<
     </div>
-    <div *ngFor="let item of [1,2,3,4,5]" [ngStyle]="{'background-color':(currentPage==item?'blue':'white')}"
+    <div *ngFor="let item of totalPages" [ngStyle]="{'background-color':(currentPage==item?'blue':'white'),'color':(currentPage==item?'white':'black')}"
     (click)="this.currentPage=item;callIt()"
     >
         <div>

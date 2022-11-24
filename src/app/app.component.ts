@@ -8,7 +8,8 @@ import {Octokit} from 'octokit'
 })
 
 export class AppComponent {
-  userName:any="rishak192";
+
+  userName:any="ankitkumar1578114";
 
   ngOnInit(){
     // this.callIt();
